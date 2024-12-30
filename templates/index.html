@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+</head>
+<body>
+    <h1>Ask the AI Assistant</h1>
+
+    <form method="POST">
+        <label for="user_input">Enter your question:</label><br>
+        <input type="text" id="user_input" name="user_input" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if response %}
+        <h2>Response:</h2>
+    <p><b>{{ response }}</b></p>
+    {% endif %}
+</body>
+</html>
